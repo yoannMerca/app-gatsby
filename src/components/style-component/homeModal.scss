@@ -1,0 +1,16 @@
+.home-modal{
+  border: solid  10px rebeccapurple;
+  .d-flex{
+      display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 70%;
+    align-items: center;
+  }
+  .d-inline-f{
+    display: inline-flex;
+    min-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
