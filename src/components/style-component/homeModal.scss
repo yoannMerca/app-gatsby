@@ -1,16 +1,44 @@
+@import '../../style/global';
 .home-modal{
-  border: solid  10px rebeccapurple;
-  .d-flex{
+  background: #222;
+  min-width: 80vw;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+  $border: 5px;
+  color: #FFF;
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+  border-radius: 1em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to right, $purple, $pink);
+  }
+  h1{
+    text-align: center;
+    margin-left: 127px;
+    font-size: 65px;
+    span{
+      color: $purple;
+    }
+  }
+  .header{
+    ul{
       display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    min-width: 70%;
-    align-items: center;
+      justify-content: flex-end;
+      list-style: none;
+      li{
+        margin: 5px 20px;
+      }
+    }
   }
-  .d-inline-f{
-    display: inline-flex;
-    min-width: 100%;
-    padding: 0 1rem;
-  }
+
 }
 

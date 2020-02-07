@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import HomeModal from "../components/homeModal";
 
 const IndexPage = () => (
-  <Layout>
+  <Layout style={'bg-home'}>
     <SEO title="Home" />
    <HomeModal/>
   </Layout>

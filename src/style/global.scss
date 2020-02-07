@@ -1,14 +1,20 @@
 
-@import '../components/style-component/homeModal';
 
-$navbar: linear-gradient( 45deg, #a601a5, #5e54f6, #5300f6);
-
-* {
+$navbar: linear-gradient(to left, #a601a5 50%, #edd1f6 50%);
+$purple: #a601a5;
+$pink: #ff024c;
+$bg: #222;
+ * {
   margin: 0;
   padding: 0;
 }
-body{
-  background-image: $navbar;
+main.bg-home{
   min-height: 100vh;
   color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  background-color: $bg;
 }
